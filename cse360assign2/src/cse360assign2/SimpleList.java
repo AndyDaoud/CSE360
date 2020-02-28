@@ -41,7 +41,7 @@ public class SimpleList {
  * Decreases the size of the array
  */
 	public void decreaseArraySize() {
-		int newsize = count;
+		int newsize = ((maxcount - (maxcount/4)) +1);
 		int newList[] = new int[newsize];					//creates temporary list of new size
 		for(int index = 0; index < count; index++) {
 			newList[index] = list[index];
